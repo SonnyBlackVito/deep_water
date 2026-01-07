@@ -112,7 +112,8 @@ export const metadata = {
       "Kuvaartlabs is the ultimate K-pop Web3 platform that connects fans and artists through blockchain technology, NFTs, and immersive experiences.",
     images: [
       {
-        url: "/welcome-banner-1200x600.png",
+        url: "/banner_IMMM.jpg",
+        // url: "/welcome-banner-1200x600.png",
         width: 1200,
         height: 600,
         alt: "Kuvaartlabs- The Ultimate K-pop Web3 Platform",
