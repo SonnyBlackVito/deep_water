@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
   "name": "Kuvaartlabs Web3 Platform",
-  "short_name": "KpopRoad",
-  "description": "K-POP ROAD is a next-generation Web3 platform designed to connect global fans with K-POP artists. Vote, participate in auditions, and earn rewards.",
+  "short_name": "Kuvaartlabs",
+  "description": "Kuvaartlabs FOR ART",
 
   "start_url": "/",
   "scope": "/",
-  "id": "kpoproad-web-app",
+  "id": "kuvaartlabs-web-app",
 
   "display": "standalone",
   "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
