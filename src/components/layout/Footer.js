@@ -121,7 +121,7 @@ export default function Footer() {
             </Link>
           </Box>
 
-          <HStack
+          {/* <HStack
             order={{ base: 2, lg: 2 }}
             spacing={{ base: 8, sm: 10, md: 14, lg: 20 }}
             alignItems="flex-start"
@@ -177,16 +177,16 @@ export default function Footer() {
                 </Text>
               </Link>
 
-              {/* <Text 
+              <Text 
                 _hover={{ color: "gray.600", textDecoration: "underline" }}
                 transition="all 0.2s ease"
                 cursor="pointer"
                 fontSize={{ base: "md", md: "md", lg: "lg" }}
                 fontWeight="bold">
                 Privacy Policy
-              </Text> */}
+              </Text>
             </VStack>
-          </HStack>
+          </HStack> */}
         </Flex>
 
         <Text
@@ -195,7 +195,7 @@ export default function Footer() {
           color="gray.300"
           textAlign="center"
           maxW="100%">
-          Copyright © Kpop Road. All rights reserved.
+          Copyright © SSC365. All rights reserved.
         </Text>
       </VStack>
     </Container>
