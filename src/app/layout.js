@@ -24,39 +24,32 @@ const sora = Sora({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://kpoproad.io"),
+  metadataBase: new URL("https://www.kuvaartlabs.com"),
 
   title: {
-    default: "Kuvaartlabs- K-POP Web3 Platform | Vote for Your Favorite Idols",
-    template: "%s | Kpop Road",
+    default: "Kuvaartlabs Web3 Platform | For ART",
+    template: "%s | Kuvaartlabs Web3 Platform FOR ART",
   },
 
-  description:
-    "K-POP ROAD is a next-generation Web3 platform designed to connect global fans with K-POP artists. Vote for idols, participate in auditions, and earn rewards in the ultimate K-pop fan community.",
+  description: "Kuvaartlabs FOR ART",
 
   keywords: [
-    "Kpop",
-    "K-pop",
-    "Korean pop",
-    "idols",
-    "voting",
-    "auditions",
+    "Kuvaartlabs",
+    "ART",
     "Web3",
     "blockchain",
     "NFT",
-    "fan community",
-    "Korean music",
     "entertainment",
     "아이돌",
     "케이팝",
   ],
 
-  authors: [{ name: "Kpop Road", url: "https://kpoproad.io" }],
-  creator: "Kpop Road",
-  publisher: "KuvaartlabsPlatform",
+  authors: [{ name: "Kuvaartlabs", url: "https://www.kuvaartlabs.com" }],
+  creator: "Kuvaartlabs",
+  publisher: "Kuvaartlabs Platform",
   generator: "Next.js",
 
-  applicationName: "Kpop Road",
+  applicationName: "Kuvaartlabs Web3 Platform",
 
   referrer: "origin-when-cross-origin",
 
@@ -88,15 +81,15 @@ export const metadata = {
   classification: "Entertainment, Music, K-pop, Web3",
 
   alternates: {
-    canonical: "https://kpoproad.io",
+    canonical: "https://www.kuvaartlabs.com",
     languages: {
-      "en-US": "https://kpoproad.io/en",
-      "ko-KR": "https://kpoproad.io/ko",
-      "ja-JP": "https://kpoproad.io/ja",
-      "zh-CN": "https://kpoproad.io/zh",
+      "en-US": "https://www.kuvaartlabs.com/en",
+      "ko-KR": "https://www.kuvaartlabs.com/ko",
+      "ja-JP": "https://www.kuvaartlabs.com/ja",
+      "zh-CN": "https://www.kuvaartlabs.com/zh",
     },
     types: {
-      "application/rss+xml": "https://kpoproad.io/feed.xml",
+      "application/rss+xml": "https://www.kuvaartlabs.com/feed.xml",
     },
   },
 
@@ -112,9 +105,9 @@ export const metadata = {
   },
 
   openGraph: {
-    url: "https://kpoproad.io",
-    siteName: "Kpop Road",
-    title: "Kuvaartlabs- K-POP Web3 Platform | Vote for Your Favorite Idols",
+    url: "https://www.kuvaartlabs.com",
+    siteName: "Kuvaartlabs",
+    title: "Kuvaartlabs Web3 Platform | Vote for Your Favorite Idols",
     description:
       "Join the ultimate K-pop fan community. Vote for your favorite idols, participate in auditions, and earn rewards on our Web3 platform.",
     images: [
@@ -131,21 +124,21 @@ export const metadata = {
 
   verification: {
     other: {
-      me: ["contact@kpoproad.io", "https://kpoproad.io"],
+      me: ["contact@kpoproad.io", "https://www.kuvaartlabs.com"],
       "naver-site-verification": "496e1462dfb901aaaaf9f8d32e0348a5bceb0ee2",
     },
   },
 
   appLinks: {
     web: {
-      url: "https://kpoproad.io",
+      url: "https://www.kuvaartlabs.com",
       should_fallback: true,
     },
   },
 
-  bookmarks: ["https://kpoproad.io/favorites"],
-  archives: ["https://kpoproad.io/archives"],
-  assets: ["https://kpoproad.io/assets"],
+  bookmarks: ["https://www.kuvaartlabs.com/favorites"],
+  archives: ["https://www.kuvaartlabs.com/archives"],
+  assets: ["https://www.kuvaartlabs.com/assets"],
 
   other: {
     "msapplication-TileColor": "#f9e2e3",
