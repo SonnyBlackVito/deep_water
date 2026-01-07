@@ -549,41 +549,41 @@ const Header = ({ onHome, onAbout }) => {
       onClick: handleScrollToTop,
       isActive: pathname === "/",
     },
-    {
-      key: "artist",
-      label: "ART",
-      onClick: handleGoArtist,
-      isActive: pathname.startsWith("/artist"),
-    },
-    {
-      key: "audition",
-      label: "AUDITION",
-      onClick: handleGoAudition,
-      isActive: pathname.startsWith("/audition"),
-      submenu: [
-        {
-          key: "audition-collection",
-          label: "COLLECTION",
-          href: "/audition/collection",
-        },
-        {
-          key: "audition-vote",
-          label: "VOTE",
-          href: "/audition/vote",
-        },
-      ],
-    },
-    {
-      key: "whitepaper",
-      label: "WHITEPAPER",
-      href: "https://docs.kpoproad.com",
-    },
-    {
-      key: "news",
-      label: "NEWS",
-      onClick: handleGoNews,
-      isActive: pathname.startsWith("/news"),
-    },
+    // {
+    //   key: "artist",
+    //   label: "ART",
+    //   onClick: handleGoArtist,
+    //   isActive: pathname.startsWith("/artist"),
+    // },
+    // {
+    //   key: "audition",
+    //   label: "AUDITION",
+    //   onClick: handleGoAudition,
+    //   isActive: pathname.startsWith("/audition"),
+    //   submenu: [
+    //     {
+    //       key: "audition-collection",
+    //       label: "COLLECTION",
+    //       href: "/audition/collection",
+    //     },
+    //     {
+    //       key: "audition-vote",
+    //       label: "VOTE",
+    //       href: "/audition/vote",
+    //     },
+    //   ],
+    // },
+    // {
+    //   key: "whitepaper",
+    //   label: "WHITEPAPER",
+    //   href: "https://docs.kpoproad.com",
+    // },
+    // {
+    //   key: "news",
+    //   label: "NEWS",
+    //   onClick: handleGoNews,
+    //   isActive: pathname.startsWith("/news"),
+    // },
   ];
 
   return (

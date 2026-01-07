@@ -64,7 +64,7 @@ export default function HoverButton() {
 
   return (
     <>
-      <Link
+      {/* <Link
         href="https://app.kpoproad.io"
         passHref
         target="_blank"
@@ -74,125 +74,123 @@ export default function HoverButton() {
           color: "inherit",
           fontSize: "inherit",
           fontWeight: "inherit",
-        }}>
-        <Box
-          href="https://app.kpoproad.io"
-          passHref
-          target="_blank"
-          rel="noopener noreferrer"
-          as="button"
-          position="relative"
-          px={paddingX}
-          py={paddingY}
-          bg="#ffffff"
-          color="black"
-          fontWeight="600"
-          borderRadius="md"
-          overflow="hidden"
-          onMouseEnter={() => setIsHover(true)}
-          onMouseLeave={() => setIsHover(false)}
-          onClick={handleLaunchApp}
-          minW={buttonWidth}
-          height={buttonHeight}
-          cursor="pointer"
-          fontSize={fontSize}
-          display="block"
-          _active={{
-            transform: "scale(0.98)",
+        }}> */}
+      <Box
+        href="https://app.kpoproad.io"
+        passHref
+        target="_blank"
+        rel="noopener noreferrer"
+        as="button"
+        position="relative"
+        px={paddingX}
+        py={paddingY}
+        bg="#ffffff"
+        color="black"
+        fontWeight="600"
+        borderRadius="md"
+        overflow="hidden"
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+        onClick={handleLaunchApp}
+        minW={buttonWidth}
+        height={buttonHeight}
+        cursor="pointer"
+        fontSize={fontSize}
+        display="block"
+        _active={{
+          transform: "scale(0.98)",
+        }}
+        touchAction="manipulation">
+        <MotionBox
+          layout
+          position="absolute"
+          top={isHover ? "auto" : { base: "2px", sm: "3px", md: "4px" }}
+          bottom={isHover ? { base: "2px", sm: "3px", md: "4px" } : "auto"}
+          left={{ base: "2px", sm: "3px", md: "4px" }}
+          w={iconSize}
+          h={iconSize}
+          animate={{
+            rotate: isHover ? 280 : 350,
           }}
-          touchAction="manipulation"
-        >
+          transition={{
+            layout: { duration: 0.4, ease: "easeInOut" },
+          }}>
+          <Image
+            src="/icons/left_arrow.svg"
+            alt="icon"
+            loading="lazy"
+            w={iconImageSize}
+            h={iconImageSize}
+            objectFit="contain"
+          />
+        </MotionBox>
+
+        {/* Right Arrow */}
+        <MotionBox
+          layout
+          position="absolute"
+          top={isHover ? { base: "0px", sm: "1px", md: "2px" } : "auto"}
+          bottom={
+            isHover
+              ? { base: "6px", sm: "7px", md: "8px" }
+              : { base: "-2px", sm: "-1px", md: "-2px" }
+          }
+          right={
+            isHover
+              ? { base: "-3px", sm: "-2px", md: "-3px" }
+              : { base: "-2px", sm: "-1px", md: "-2px" }
+          }
+          w={iconSize}
+          h={iconSize}
+          animate={{
+            rotate: isHover ? 290 : 350,
+          }}
+          transition={{
+            layout: { duration: 0.4, ease: "easeInOut" },
+          }}>
+          <Image
+            src="/icons/right_arrow.svg"
+            alt="icon"
+            w={iconImageSize}
+            h={iconImageSize}
+            loading="lazy"
+            objectFit="contain"
+          />
+        </MotionBox>
+
+        <Box
+          position="relative"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          height="100%">
           <MotionBox
-            layout
             position="absolute"
-            top={isHover ? "auto" : { base: "2px", sm: "3px", md: "4px" }}
-            bottom={isHover ? { base: "2px", sm: "3px", md: "4px" } : "auto"}
-            left={{ base: "2px", sm: "3px", md: "4px" }}
-            w={iconSize}
-            h={iconSize}
+            fontSize={fontSize}
+            fontWeight="inherit"
             animate={{
-              rotate: isHover ? 280 : 350,
+              y: isHover ? { base: 12, sm: 15, md: 20 } : 0,
+              opacity: isHover ? 0 : 1,
             }}
-            transition={{
-              layout: { duration: 0.4, ease: "easeInOut" },
-            }}>
-            <Image
-              src="/icons/left_arrow.svg"
-              alt="icon"
-              loading="lazy"
-              w={iconImageSize}
-              h={iconImageSize}
-              objectFit="contain"
-            />
+            transition={{ duration: 0.3, ease: "easeOut" }}>
+            LAUNCH APP
           </MotionBox>
 
-          {/* Right Arrow */}
+          {/* Hover Text */}
           <MotionBox
-            layout
             position="absolute"
-            top={isHover ? { base: "0px", sm: "1px", md: "2px" } : "auto"}
-            bottom={
-              isHover
-                ? { base: "6px", sm: "7px", md: "8px" }
-                : { base: "-2px", sm: "-1px", md: "-2px" }
-            }
-            right={
-              isHover
-                ? { base: "-3px", sm: "-2px", md: "-3px" }
-                : { base: "-2px", sm: "-1px", md: "-2px" }
-            }
-            w={iconSize}
-            h={iconSize}
+            fontSize={fontSize}
+            fontWeight="inherit"
             animate={{
-              rotate: isHover ? 290 : 350,
+              y: isHover ? 0 : { base: -12, sm: -15, md: -20 },
+              opacity: isHover ? 1 : 0,
             }}
-            transition={{
-              layout: { duration: 0.4, ease: "easeInOut" },
-            }}>
-            <Image
-              src="/icons/right_arrow.svg"
-              alt="icon"
-              w={iconImageSize}
-              h={iconImageSize}
-              loading="lazy"
-              objectFit="contain"
-            />
+            transition={{ duration: 0.3, ease: "easeOut" }}>
+            LAUNCH APP
           </MotionBox>
-
-          <Box
-            position="relative"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            height="100%">
-            <MotionBox
-              position="absolute"
-              fontSize={fontSize}
-              fontWeight="inherit"
-              animate={{
-                y: isHover ? { base: 12, sm: 15, md: 20 } : 0,
-                opacity: isHover ? 0 : 1,
-              }}
-              transition={{ duration: 0.3, ease: "easeOut" }}>
-              LAUNCH APP
-            </MotionBox>
-
-            {/* Hover Text */}
-            <MotionBox
-              position="absolute"
-              fontSize={fontSize}
-              fontWeight="inherit"
-              animate={{
-                y: isHover ? 0 : { base: -12, sm: -15, md: -20 },
-                opacity: isHover ? 1 : 0,
-              }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-            >
-              LAUNCH APP  
-            </MotionBox>
-          </Box>
         </Box>
-      </Link>
+      </Box>
+      {/* </Link> */}
     </>
   );
-};
+}
