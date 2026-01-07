@@ -1,25 +1,25 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "Kpop Road - K-POP Web3 Platform",
+  "name": "Kuvaartlabs- K-POP Web3 Platform",
   "short_name": "KpopRoad",
   "description": "K-POP ROAD is a next-generation Web3 platform designed to connect global fans with K-POP artists. Vote, participate in auditions, and earn rewards.",
-  
+
   "start_url": "/",
   "scope": "/",
   "id": "kpoproad-web-app",
-  
+
   "display": "standalone",
   "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "orientation": "any",
-  
+
   "theme_color": "#f9e2e3",
   "background_color": "#ffffff",
-  
+
   "lang": "en",
   "dir": "ltr",
-  
+
   "categories": ["entertainment", "music", "social", "lifestyle"],
-  
+
   "icons": [
     {
       "src": "/icons/icon-16x16.png",
@@ -112,24 +112,24 @@
       "purpose": "maskable"
     }
   ],
-  
+
   "screenshots": [
     {
       "src": "/screenshots/desktop-home.jpg",
       "sizes": "1920x1080",
       "type": "image/jpeg",
       "form_factor": "wide",
-      "label": "Kpop Road Homepage on Desktop"
+      "label": "KuvaartlabsHomepage on Desktop"
     },
     {
       "src": "/screenshots/mobile-home.jpg",
       "sizes": "390x844",
       "type": "image/jpeg",
       "form_factor": "narrow",
-      "label": "Kpop Road Homepage on Mobile"
+      "label": "KuvaartlabsHomepage on Mobile"
     }
   ],
-  
+
   "shortcuts": [
     {
       "name": "Vote for Idols",
@@ -171,17 +171,17 @@
       ]
     }
   ],
-  
+
   "related_applications": [],
   "prefer_related_applications": false,
-  
+
   "protocol_handlers": [
     {
       "protocol": "web+kpoproad",
       "url": "/open?url=%s"
     }
   ],
-  
+
   "share_target": {
     "action": "/api/share",
     "method": "POST",
@@ -198,11 +198,11 @@
       ]
     }
   },
-  
+
   "edge_side_panel": {
     "preferred_width": 400
   },
-  
+
   "launch_handler": {
     "client_mode": ["navigate-existing", "auto"]
   }

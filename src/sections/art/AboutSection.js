@@ -170,13 +170,13 @@ export default function AboutSection() {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           textAlign={{ base: "center", md: "left" }}>
-          KPOP ROAD x PICASSO
+          Kuvaartlabs x PICASSO
         </MotionText>
 
         <Box position="relative" mb={{ base: 16, md: 20, lg: 32 }}>
           <ContentSection
             imageSrc="/art/about_picasso_1.webp"
-            imageAlt="Picasso and KPOP Road collaboration art"
+            imageAlt="Picasso and Kuvaartlabscollaboration art"
             paragraphs={section1Paragraphs}
             reverseLayout={false}
           />
@@ -184,7 +184,7 @@ export default function AboutSection() {
           <Image
             position="absolute"
             src="/art/kpoproad_absolute.webp"
-            alt="KPOP Road logo decoration"
+            alt="Kuvaartlabslogo decoration"
             display={{ base: "none", lg: "block" }}
             bottom={{ lg: "-10%", xl: "-35%" }}
             right={{ lg: "5%", xl: "10%" }}
@@ -198,7 +198,7 @@ export default function AboutSection() {
           {/* <Image
             position="absolute"
             src="/art/kpoproad_absolute.webp"
-            alt="KPOP Road logo decoration"
+            alt="Kuvaartlabslogo decoration"
             display={{ base: "none", lg: "block" }}
             bottom={{ lg: "-10%", xl: "-35%" }}
             right={{ lg: "5%", xl: "10%" }}
@@ -213,7 +213,7 @@ export default function AboutSection() {
           <Image
             position="absolute"
             src="/art/kpoproad_absolute.webp"
-            alt="KPOP Road logo decoration"
+            alt="Kuvaartlabslogo decoration"
             display={{ base: "none", lg: "block" }}
             bottom={{ lg: "-5%", xl: "-15%", "2xl": "-25%" }}
             right={{ lg: "200%", xl: "6%", "2xl": "10%" }}

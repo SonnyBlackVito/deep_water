@@ -623,9 +623,9 @@ const Header = ({ onHome, onAbout }) => {
           transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)">
           <HStack spacing={0} alignItems="center" hideBelow="lg" flex="1">
             <Image
-              src="/logo/logo.png"
+              src="/logo/logo_kuva_rbg.png"
               alt="KPOP ROAD"
-              h="32px"
+              h="48px"
               cursor="pointer"
               onClick={handleScrollToTop}
               mr={12}

@@ -27,7 +27,7 @@ export const metadata = {
   metadataBase: new URL("https://kpoproad.io"),
 
   title: {
-    default: "Kpop Road - K-POP Web3 Platform | Vote for Your Favorite Idols",
+    default: "Kuvaartlabs- K-POP Web3 Platform | Vote for Your Favorite Idols",
     template: "%s | Kpop Road",
   },
 
@@ -53,7 +53,7 @@ export const metadata = {
 
   authors: [{ name: "Kpop Road", url: "https://kpoproad.io" }],
   creator: "Kpop Road",
-  publisher: "Kpop Road Platform",
+  publisher: "KuvaartlabsPlatform",
   generator: "Next.js",
 
   applicationName: "Kpop Road",
@@ -114,7 +114,7 @@ export const metadata = {
   openGraph: {
     url: "https://kpoproad.io",
     siteName: "Kpop Road",
-    title: "Kpop Road - K-POP Web3 Platform | Vote for Your Favorite Idols",
+    title: "Kuvaartlabs- K-POP Web3 Platform | Vote for Your Favorite Idols",
     description:
       "Join the ultimate K-pop fan community. Vote for your favorite idols, participate in auditions, and earn rewards on our Web3 platform.",
     images: [
@@ -122,7 +122,7 @@ export const metadata = {
         url: "/welcome-banner-1200x600.png",
         width: 1200,
         height: 600,
-        alt: "Kpop Road - The Ultimate K-pop Web3 Platform",
+        alt: "Kuvaartlabs- The Ultimate K-pop Web3 Platform",
       },
     ],
     type: "website",
