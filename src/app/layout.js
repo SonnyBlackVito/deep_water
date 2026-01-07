@@ -107,9 +107,9 @@ export const metadata = {
   openGraph: {
     url: "https://www.kuvaartlabs.com",
     siteName: "Kuvaartlabs",
-    title: "Kuvaartlabs Web3 Platform | Vote for Your Favorite Idols",
+    title: "Kuvaartlabs Web3 Platform",
     description:
-      "Join the ultimate K-pop fan community. Vote for your favorite idols, participate in auditions, and earn rewards on our Web3 platform.",
+      "Kuvaartlabs is the ultimate K-pop Web3 platform that connects fans and artists through blockchain technology, NFTs, and immersive experiences.",
     images: [
       {
         url: "/welcome-banner-1200x600.png",
