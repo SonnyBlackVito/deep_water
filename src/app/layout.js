@@ -1,19 +1,13 @@
 import { Sora } from "next/font/google";
 import { ChakraProvider } from "@chakra-ui/react";
-// import { ToastContainer } from "react-toastify";
 import { CategoryProvider } from "@/context/categoryContext";
 import { system } from "./theme";
-
-// import "react-toastify/dist/ReactToastify.css";
-// import "../styles/globals.css";
 import "./globals.css";
-// import Header from "@/components/layout/Header";
-// import Footer from "@/components/layout/Footer";
-// import LenisWrapper from "@/components/LenisWrapper";
 
 import LenisWrapper from "@/components/LenisWrapper";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+
 const sora = Sora({
   variable: "--font-sora",
   subsets: ["latin"],
@@ -52,8 +46,6 @@ export const metadata = {
   applicationName: "Kuvaartlabs Web3 Platform",
 
   referrer: "origin-when-cross-origin",
-
-  colorScheme: "light dark",
 
   manifest: "/manifest.json",
 
@@ -112,8 +104,7 @@ export const metadata = {
       "Kuvaartlabs is the ultimate K-pop Web3 platform that connects fans and artists through blockchain technology, NFTs, and immersive experiences.",
     images: [
       {
-        url: "/banner_IMMM.jpg",
-        // url: "/welcome-banner-1200x600.png",
+        url: "/welcome_banner_1200x600.png",
         width: 1200,
         height: 600,
         alt: "Kuvaartlabs- The Ultimate K-pop Web3 Platform",
@@ -148,7 +139,6 @@ export const metadata = {
     "apple-mobile-web-app-status-bar-style": "black-translucent",
     "apple-mobile-web-app-title": "Kpop Road",
     "mobile-web-app-capable": "yes",
-    "theme-color": "#f9e2e3",
     google: "notranslate",
     "google-play-app": "app-id=io.kpoproad.app",
     "fb:app_id": "your-facebook-app-id",
@@ -156,6 +146,14 @@ export const metadata = {
     "article:author": "https://www.facebook.com/kpoproad",
     "article:publisher": "https://www.facebook.com/kpoproad",
   },
+};
+
+// ✅ Viewport export cho Next.js v16
+export const viewport = {
+  colorScheme: "light dark",
+  themeColor: "#f9e2e3",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
@@ -177,15 +175,6 @@ export default function RootLayout({ children }) {
               <Footer />
             </CategoryProvider>
           </LenisWrapper>
-
-          {/* <ToastContainer
-            position="top-center"
-            autoClose={4000}
-            newestOnTop
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-          /> */}
         </ChakraProvider>
       </body>
     </html>
