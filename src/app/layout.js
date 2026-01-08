@@ -70,7 +70,7 @@ export const metadata = {
   },
 
   category: "entertainment",
-  classification: "Entertainment, Music, K-pop, Web3",
+  classification: "Entertainment, Music, , Web3",
 
   alternates: {
     canonical: "https://www.kuvaartlabs.com",
@@ -101,13 +101,13 @@ export const metadata = {
     siteName: "Kuvaartlabs",
     title: "Kuvaartlabs Web3 Platform",
     description:
-      "Kuvaartlabs is the ultimate K-pop Web3 platform that connects fans and artists through blockchain technology, NFTs, and immersive experiences.",
+      "Kuvaartlabs is the ultimate  Web3 platform that connects fans and artists through blockchain technology, NFTs, and immersive experiences.",
     images: [
       {
         url: "/welcome_banner_1200x600.png",
         width: 1200,
         height: 600,
-        alt: "Kuvaartlabs- The Ultimate K-pop Web3 Platform",
+        alt: "Kuvaartlabs- The Ultimate  Web3 Platform",
       },
     ],
     type: "website",
