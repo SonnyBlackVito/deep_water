@@ -654,7 +654,7 @@ const Header = ({ onHome, onAbout }) => {
 
           <Box hideFrom="lg">
             <Image
-              src="/logo/logo.png"
+              src="/logo/logo_kuva_rbg.png"
               alt="KPOP ROAD"
               h="28px"
               cursor="pointer"
@@ -714,7 +714,7 @@ const Header = ({ onHome, onAbout }) => {
                   borderBottomWidth="1px"
                   borderColor="whiteAlpha.200">
                   <Image
-                    src="/logo/logo.png"
+                    src="/logo/logo_kuva_rbg.png"
                     alt="KPOP ROAD"
                     h="28px"
                     cursor="pointer"
